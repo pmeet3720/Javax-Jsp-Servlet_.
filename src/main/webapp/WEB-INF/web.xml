@@ -2,7 +2,7 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
   <display-name>Java-first-dynamic-web-application</display-name>
   <welcome-file-list>
-  	<welcome-file>home.html</welcome-file>
+  	<welcome-file>login.html</welcome-file>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.jsp</welcome-file>
     <welcome-file>index.htm</welcome-file>
@@ -17,7 +17,45 @@
   </servlet>
   <servlet-mapping>
   	<servlet-name>FirstServlet-abc</servlet-name>
-  	<url-pattern>/xyz</url-pattern>
+  	<url-pattern>/first</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>SecondServlet-abc</servlet-name>
+  	<servlet-class>com.royal.controller.SecondServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SecondServlet-abc</servlet-name>
+  	<url-pattern>/second</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ColorDiamondServlet</servlet-name>
+  	<servlet-class>com.royal.controller.ColorDiamondServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ColorDiamondServlet</servlet-name>
+  	<url-pattern>/colordiamond</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<servlet-class>com.royal.controller.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  	<servlet-name>tableServlet</servlet-name>
+  	<servlet-class>com.royal.controller.TableServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>tableServlet</servlet-name>
+  	<url-pattern>/table</url-pattern>
   </servlet-mapping>
   
 </web-app>	
